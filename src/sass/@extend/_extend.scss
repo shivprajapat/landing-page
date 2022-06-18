@@ -1,0 +1,20 @@
+%btn {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 1px solid $main-color;
+  letter-spacing: 5px;
+  box-shadow: 0.174px -4.997px 21.5px rgba(2, 4, 0, 0.2);
+}
+.btnBlue {
+  color: $white;
+  @extend %btn;
+  background-color: $main-color;
+  &:hover {
+    color: #000;
+    background-color: $white;
+  }
+}

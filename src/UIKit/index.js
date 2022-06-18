@@ -1,0 +1,7 @@
+export { default as H1 } from './BlockElements/h1'
+export { default as H2 } from './BlockElements/h2'
+export { default as H3 } from './BlockElements/h3'
+export { default as H4 } from './BlockElements/h4'
+export { default as H5 } from './BlockElements/h5'
+export { default as Div } from './BlockElements/div'
+export { default as P } from './BlockElements/p'

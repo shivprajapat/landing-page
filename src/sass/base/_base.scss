@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+a,
+li,
+ul,
+p,
+form,
+input {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: normal;
+  font-family: "Sans-serif";
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+.section-padding {
+  padding: 55px 0;
+}

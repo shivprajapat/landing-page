@@ -1,0 +1,25 @@
+.navbar {
+  box-shadow: 0 0 10px;
+  //   position: fixed;
+  //   top: 0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0.174px -4.997px 21.5px rgba(2, 4, 0, 0.2);
+  background-color: $white;
+  .navbar-brand {
+    img {
+      width: 160px;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    color: var(--text-color);
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

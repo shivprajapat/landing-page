@@ -1,0 +1,43 @@
+@include media(1620px) {
+  .home .home-img {
+    background: pink;
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@include media(1440px) {
+  .home .home-img {
+    background: cyan;
+  }
+}
+
+@include media(1280px) {
+  .home .home-img {
+    background: orange;
+  }
+}
+
+@include media(992px) {
+  .home .home-img {
+    background: red;
+  }
+}
+
+@include media(1024px) {
+  .home .home-img {
+    background: blue;
+  }
+}
+
+@include media(768px) {
+  .home .home-img {
+    background: green;
+  }
+}
+
+@include media(576px) {
+  .home .home-img {
+    background: teal;
+  }
+}

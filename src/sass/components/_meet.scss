@@ -1,0 +1,16 @@
+.meet {
+  .heading_tab {
+    position: relative;
+    padding: 60px 0;
+    @include bgImage("../../Assets/images/meet-shape.png");
+    width: 100%;
+    margin: 0;
+  }
+  &_tab {
+    padding-top: 45px;
+  }
+}
+.more-btn {
+  margin-top: 45px;
+  display: inline-block;
+}
