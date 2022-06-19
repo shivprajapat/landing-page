@@ -1,30 +1,12 @@
-/* =======================
-  @Mixin
-  =======================*/
-
-// @font-face
-
-@mixin font-face($name, $file) {
-  @font-face {
-    font-family: "#{$name}";
-    src: url("../fonts/#{$file}.ttf");
-  }
-}
-
-//  use => @include font-face("My Font", my-font);
-
 @mixin bgImage($image) {
   background: url($image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-
-
 }
 
 //   @include bgImage("/images/banner.jpg");
-
 
 @mixin position-absolute($top: null, $left: null, $right: null, $bottom: null) {
   position: absolute;
@@ -60,15 +42,6 @@
 
 // @include Transition(0.3s);
 
-// background image
-@mixin bgImage($image) {
-  background: url($image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-// @include bgImage("/images/1.jpg");
 
 // Margin
 @mixin margin($values...) {
@@ -88,45 +61,10 @@
 
 // @include padding(2px 4px 6px 8px);
 
-// key Frames
-@mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-
-  @-ms-keyframes #{$animation-name} {
-    @content;
-  }
-
-  @-o-keyframes #{$animation-name} {
-    @content;
-  }
-
-  @keyframes #{$animation-name} {
-    @content;
-  }
-}
-
-// @include keyframes(background) {
-//   0% {
-//     background: white;
-//   }
-//   50% {
-//     background: lightblue;
-//   }
-//   100% {
-//     background: royalblue;
-//   }
-// }
-
 @mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
+  -webkit-animation: #{$str} linear infinite;
+  -moz-animation: #{$str} linear infinite;
+  -ms-animation: #{$str} linear infinite;
+  -o-animation: #{$str} linear infinite;
+  animation: #{$str} linear infinite;
 }

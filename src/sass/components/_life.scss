@@ -10,7 +10,7 @@
             position: relative;
 
             &::before {
-                @include position-absolute(null, 0, null, 20px);
+                @include position-absolute(null, 20px, null, 20px);
                 background-color: $main-color;
                 height: 2px;
                 width: 40%;
@@ -38,7 +38,7 @@
         .life-img {
             border-radius: 100%;
             display: inline-block;
-            box-shadow: 0 -3px 10px #ddd;
+            box-shadow: 0 -3px 10px $light-grey;
 
             img {
                 width: 100px;
@@ -47,10 +47,9 @@
         }
 
         .life-content {
-            padding: 0px 70px;
-
+            @include padding(0 70px);
             h3 {
-                margin: 15px 0px;
+                @include margin(15px 0);
                 font-size: 25px;
                 color: $main-color;
                 font-weight: 600;

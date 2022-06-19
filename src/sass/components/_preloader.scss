@@ -1,12 +1,12 @@
 .preloader {
     @include flex(center, center, null);
     min-height: 100vh;
-    background-color: #001d30;
+    background-color:$BlackPearl;
 
     .loader {
         position: absolute;
         width: 300px;
-        animation: changeBg 2s linear infinite;
+        @include animation(changeBg 2s);
 
         img {
             width: 100%;

@@ -1,6 +1,6 @@
 .heading_tab {
   position: relative;
-  margin: 0 auto 40px 0;
+  @include margin(0 auto 40px 0);
   text-align: center;
 
   h2,

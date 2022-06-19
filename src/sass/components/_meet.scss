@@ -1,7 +1,7 @@
 .meet {
   .heading_tab {
     position: relative;
-    padding: 60px 0;
+    @include padding(60px 0);
     @include bgImage("../../Assets/images/meet-shape.png");
     background-size: contain;
     width: 100%;

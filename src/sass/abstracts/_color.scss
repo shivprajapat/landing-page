@@ -1,11 +1,9 @@
-:root {
-  --main-color: #fe5757;
---text-color:#745a82;
-  --main-to-dark-color: var(--main-color);
-    --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
-    --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-$white:#ffffff;
+$white: #ffffff;
+$black: #000000;
+$BlackPearl: #001d30;
+$light-grey: #ddd;
+$light-grey100 :#f0f0f0;
 $main-color: #745a82;
 $main-color100: #70577d;
+
+$darkBlack: rgba(255, 255, 255, 0);

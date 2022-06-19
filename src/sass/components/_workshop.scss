@@ -1,14 +1,11 @@
 .workshop {
   position: relative;
-  padding: 50px 0;
-
+  @include padding(50px 0);
   .vertical-txt.left {
     font-size: 18px;
-
     span {
       font-weight: 600;
       margin-bottom: 5px;
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -60,7 +57,7 @@
         width: 500px;
         height: 500px;
         margin-left: auto;
-        animation: spin_01 10s linear infinite;
+        @include animation(spin_01 10s);
         object-fit: contain;
       }
 

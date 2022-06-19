@@ -12,7 +12,7 @@ Footer
     text-align: center;
 
     img {
-      margin: 0 auto 30px auto;
+      @include margin(0 auto 30px auto);
     }
 
     h5 {
@@ -41,7 +41,7 @@ Footer
       font-size: 20px;
       font-weight: 700;
       color: $main-color100;
-      margin: 0 0 25px;
+    @include margin(0 0 25px 0);
       text-transform: capitalize;
     }
 
@@ -64,8 +64,8 @@ transition: transform 0.1s ease;
           font-weight: 400;
           display: block;
           text-transform: capitalize;
-          transition: all 0.5s ease;
-          text-decoration: none;
+@include Transition(0.5s);
+         text-decoration: none;
       transform: translateX(0);
     
     }
@@ -81,7 +81,7 @@ transition: transform 0.1s ease;
   }
 
   .copyright-text {
-    padding: 20px 0;
+    @include padding(20px 0);
     color: $main-color100;
     background-color: $main-color;
   }

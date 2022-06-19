@@ -1,32 +1,45 @@
 /*-----------------------------------------------------------
-* Template Name    : name
+* Template Name    : YogaOM
 * Auther Name      : Shiv Kumar Prajapat
 * File Description : This files Includes all Style CSS
 *------------------------------------------------------------*/
 
 /*======================================================================
  Table of Content:
-=================================
-  Components CSS
-=================================
+
 01. Base
 02. Color
-03. Variables
+03. Animation
 04. Fonts
 05. Mixins
 06. Extend
 07. Animation
 08. Header
-09. Home
+09. Footer
+10. Heading
+11. Preloader
 
- ========================================================================*/
+@{component}
+
+1. Meet
+2. TeamCard
+3. Workshop
+4. Summer
+5. practice
+6. Life 
+
+@{Pages}
+
+1. Home 
+
+========================================================================*/
 
 // import base
 @import "base/base";
 
 // import abstracts
 @import "./abstracts/color";
-@import "abstracts/variables";
+@import "./abstracts/animation";
 
 // import Fonts
 @import "fonts";
@@ -37,11 +50,9 @@
 // import extend
 @import "@extend/extend";
 
-// // import function
-@import "animation";
 
 
-// // import components
+// import components
 @import "components/header";
 @import "components/heading";
 @import "components/footer";
@@ -55,4 +66,3 @@
 
 // import Pages
 @import "pages/home";
-@import "pages/about";

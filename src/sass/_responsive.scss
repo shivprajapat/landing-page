@@ -75,6 +75,14 @@
   .meet .heading_tab {
     margin-top: -28px;
   }
+    .life-title {
+      h3 {
+  
+        &::after,
+        &::before {
+          width: 35% !important;
+        }
+      }}
 }
 
 @media screen and (max-width:768px) {
@@ -245,7 +253,7 @@
 
         &::after,
         &::before {
-          width: 35%;
+          width: 28% !important;
         }
       }
 
