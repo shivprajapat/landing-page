@@ -28,6 +28,7 @@
 
 @mixin position-absolute($top: null, $left: null, $right: null, $bottom: null) {
   position: absolute;
+  content: '';
   top: $top;
   left: $left;
   right: $right;
@@ -87,36 +88,6 @@
 
 // @include padding(2px 4px 6px 8px);
 
-@mixin input-placeholder {
-  &.placeholder {
-    @content;
-  }
-
-  &:-moz-placeholder {
-    @content;
-  }
-
-  &::-moz-placeholder {
-    @content;
-  }
-
-  &:-ms-input-placeholder {
-    @content;
-  }
-
-  &::-webkit-input-placeholder {
-    @content;
-  }
-}
-
-// @include input-placeholder {color: red;}
-
-//// box
-//@mixin box($width, $height: $width) {
-// width: $width;
-// height: $height;
-//}
-
 // key Frames
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
@@ -159,106 +130,3 @@
   -o-animation: #{$str};
   animation: #{$str};
 }
-
-//  @include animation("all 3s 3");
-@mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
-  font-size: $font-size * 1px;
-  // font-size: $font-size * 0.1rem;
-  // example using rem values and 62.5% font-size so 1rem = 10px
-
-  @if $line-height==normal {
-    line-height: normal;
-  }
-
-  @else {
-    line-height: $line-height / $font-size;
-  }
-
-  @if $letter-spacing==normal {
-    letter-spacing: normal;
-  }
-
-  @else {
-    letter-spacing: #{$letter-spacing / $font-size}em;
-  }
-}
-
-// @include font-size(12, 18, 1.2);
-//    // returns
-//      // font-size: 12px;
-//  // line-height: 1.5; // 18 / 12
-// // letter-spacing: 0.1em;
-
-// Clearfix
-@mixin clearfix {
-  &:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
-
-//   @include clearfix;
-
-// Media Query
-
-// div use media query
-
-@mixin for-size($size) {
-  @if $size ==phone-only {
-    @media (max-width: 375px) {
-      @content;
-    }
-  }
-
-  @else if $size ==tablet-portrait-up {
-    @media (min-width: 576px) {
-      @content;
-    }
-  }
-
-  @else if $size ==tablet-landscape {
-    @media (min-width: 768px) {
-      @content;
-    }
-  }
-
-  @else if $size ==desktop-up {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $size ==desktop-mac {
-    @media (min-width: 1440px) {
-      @content;
-    }
-  }
-}
-
-// @include for-size(phone-only) {
-//   background-color: #ddd;
-// }
-// @include for-size(tablet-portrait-up) {
-//   background-color: gray;
-// }
-// @include for-size(tablet-landscape) {
-//   background-color: pink;
-// }
-// @include for-size(desktop-up) {
-//   background-color: #f00;
-// }
-// @include for-size(desktop-mac) {
-//   background-color: green;
-// }
-
-@mixin media($width) {
-  @media screen and (max-width: $width) {
-    @content;
-  }
-}
-
-// @include media(1200px) {background: red;}
-// @include media(1024px) {background: blue;}
-// @include media(768px) {background: green;}
-// @include media(576px) {background: pink;}

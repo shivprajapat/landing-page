@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Logo } from "../../Assets";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { routesData }  from './routerData'
+import { routesData } from './routerData'
 export const Header = () => {
-    const [data, setData] = useState(routesData);
+    const [data] = useState(routesData);
     console.log(routesData)
     return (
         <Navbar bg="light" expand="md" fixed="top">
@@ -16,8 +16,8 @@ export const Header = () => {
                     <Nav className="ms-auto">
                         {
                             data.map((item, index) => {
-                                const { name } = item;
-                                return (<Nav.Link href="#home">{name}</Nav.Link>)
+                                const { name, link } = item;
+                                return (<Nav.Link key={index} href={link}>{name}</Nav.Link>)
                             })
                         }
                     </Nav>

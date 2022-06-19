@@ -6,7 +6,7 @@ import TeamCard from './TeamCard'
 import { Div } from '../UIKit'
 const Meet = () => {
     return (
-        <section className='meet'>
+        <section className='meet' id='class'>
             <Container>
                 <Heading title='Meet our' second='yoga classes' />
                 <Div className='meet_tab'>

@@ -4,7 +4,7 @@ import { homeRoseIcon } from '../Assets'
 import { Div, H1, H4, P } from '../UIKit'
 const Banner = () => {
     return (
-        <section className="home d-flex align-items-center">
+        <section className="home d-flex align-items-center" id='home'>
             <Container>
                 <Row className="align-items-center">
                     <Col lg={7} md={12} className="mx-auto">

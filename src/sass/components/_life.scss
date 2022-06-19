@@ -6,28 +6,20 @@
 
         h3 {
             color: $main-color;
-
             font-size: 40px;
             position: relative;
 
             &::before {
-                position: absolute;
+                @include position-absolute(null, 0, null, 20px);
                 background-color: $main-color;
                 height: 2px;
                 width: 40%;
-                bottom: 20px;
-                left: 0px;
-                content: '';
             }
-
             &::after {
-                position: absolute;
                 background-color: $main-color;
                 height: 2px;
                 width: 40%;
-                bottom: 20px;
-                right: 0px;
-                content: '';
+                @include position-absolute(null, null, 20px, 20px);
             }
         }
 

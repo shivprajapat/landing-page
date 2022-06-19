@@ -1,17 +1,17 @@
 export const routesData = [
     {
         name: "Home",
-        link:'/'
+        link: '#home'
     },
     {
-        name: "Class",
+        name: "Class", link: '#class'
     },
     {
-        name: "Promo",
+        name: "Promo", link: '#promo'
     },
     {
-        name: "Online Class",
+        name: "Online Class", link: '#online-class'
     }, {
-        name: "Contact",
+        name: "Contact", link: '#contact'
     }
 ];

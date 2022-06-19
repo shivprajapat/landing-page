@@ -5,7 +5,7 @@ import { Div, H3, P } from '../UIKit'
 
 const Life = () => {
     return (
-        <section className="life-section">
+        <section className="life-section" id='online-class'>
             <Container>
                 <Div className="life-title">
                     <H3>HEALTHY</H3>

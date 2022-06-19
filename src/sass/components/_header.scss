@@ -1,11 +1,11 @@
 .navbar {
   box-shadow: 0 0 10px;
-  //   position: fixed;
-  //   top: 0;
   z-index: 999;
   width: 100%;
   box-shadow: 0.174px -4.997px 21.5px rgba(2, 4, 0, 0.2);
   background-color: $white;
+  position: relative;
+
   .navbar-brand {
     img {
       width: 160px;
@@ -18,6 +18,17 @@
     font-weight: 600;
     font-size: 20px;
     margin-right: 20px;
+
+    &.active {
+      &::before {
+        background-color: $main-color;
+        @include position-absolute(null, 50%, null, -50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+    }
+
     &:last-child {
       margin-right: 0;
     }

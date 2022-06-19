@@ -5,7 +5,7 @@ import { PracticeImg, PositionsImg, Border } from '../Assets'
 import { Div, H3, H4, P } from '../UIKit'
 const Practice = () => {
     return (
-        <section className='practice'>
+        <section className='practice' id='promo'>
             <Div className='practice_top section-padding'>
                 <Container>
                     <Row className='align-items-center'>

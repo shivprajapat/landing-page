@@ -5,7 +5,7 @@ import { Div, H3, H5, P } from '../UIKit';
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" id='contact'>
             <Container>
                 <Div className="inner-footer">
                     <Row>

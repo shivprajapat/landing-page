@@ -4,10 +4,12 @@
 
   .vertical-txt.left {
     font-size: 18px;
+
     span {
       font-weight: 600;
       margin-bottom: 5px;
-      &:last-child{
+
+      &:last-child {
         margin-bottom: 0;
       }
     }
@@ -22,9 +24,7 @@
     position: relative;
 
     .vertical-txt.left {
-      position: absolute;
-      left: -10%;
-      top: 0;
+      @include position-absolute(0, -10%, null, null);
     }
 
     .heading_tab {
@@ -65,30 +65,23 @@
       }
 
       &.user {
-        position: absolute;
-        content: "";
+        @include position-absolute(50%, 50%, null, null);
         object-fit: cover;
         width: 320px;
         height: 320px;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
       }
     }
 
     .vertical-txt {
       &.left {
-        position: absolute;
-        left: 10%;
-        top: 10%;
+        @include position-absolute(10%, 10%, null, null);
         letter-spacing: 20px;
         font-weight: 600;
       }
 
       &.right {
-        position: absolute;
-        right: -10%;
-        bottom: -35%;
+        @include position-absolute(null, null, -10%, -35%);
       }
     }
   }
