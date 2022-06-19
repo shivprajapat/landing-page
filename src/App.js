@@ -15,15 +15,13 @@ function App() {
   }, []);
   return (
     <Fragment>
-      {/* {loading ?
+      {loading ?
         <Preloader />
         : <Fragment>
           <Header />
           <Home />
           <Footer />
-        </Fragment>} */}
-      <Header />
-      <Home />
+        </Fragment>}
       <Footer />
     </Fragment>
   );

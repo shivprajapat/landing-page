@@ -28,9 +28,11 @@ input {
   outline: none;
   font-family: "Open Sans", sans-serif;
 }
+
 ul {
   list-style: none;
 }
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -47,6 +49,7 @@ input:focus,
 textarea:focus {
   border: none;
 }
+
 html,
 body {
   overflow-x: hidden;
