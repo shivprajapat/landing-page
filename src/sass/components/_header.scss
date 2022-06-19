@@ -19,11 +19,11 @@
     font-weight: 600;
     font-size: 20px;
     margin-right: 20px;
-
+position: relative;
     &.active {
       &::before {
         background-color: $main-color;
-        @include position-absolute(null, 50%, null, -50%);
+        @include position-absolute(null, 50%, null, 0%);
         width: 10px;
         height: 10px;
         border-radius: 50%;
