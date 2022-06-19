@@ -12,3 +12,9 @@ export { default as Summer } from './images/summer-bg.jpg';
 export { default as PracticeImg } from './images/practice.png';
 export { default as PositionsImg } from './images/positions.png';
 export { default as Border } from './images/border.png';
+export { default as WorkshopImg } from './images/workshop.png'; 
+export { default as Exercise } from './images/exercise.png';
+export { default as Feeding } from './images/feeding.png';
+export { default as Meditation } from './images/meditation.png';
+
+export { default as Loader } from './images/loader.gif';

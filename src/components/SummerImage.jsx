@@ -1,6 +1,6 @@
 import React from 'react'
 import { Summer } from '../Assets'
-import { Div, P } from '../UIKit'
+import { Div, H5, P } from '../UIKit'
 import Heading from './Heading'
 
 const SummerImage = () => {
@@ -9,7 +9,10 @@ const SummerImage = () => {
             <img src={Summer} alt='' className='img-fluid' />
             <Div className='summer-content'>
                 <Div className='off'>
-                    <P>10 %</P>
+                    <Div className='d-flex'>
+                        <H5>10</H5>
+                        <span>%</span>
+                    </Div>
                     <P className='off_txt'>OFF</P>
                 </Div>
                 <Div className='image-txt'>

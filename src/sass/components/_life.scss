@@ -1,0 +1,74 @@
+.life-section {
+    padding-top: 80px;
+
+    .life-title {
+        text-align: center;
+
+        h3 {
+            color: $main-color;
+
+            font-size: 40px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                background-color: $main-color;
+                height: 2px;
+                width: 40%;
+                bottom: 20px;
+                left: 0px;
+                content: '';
+            }
+
+            &::after {
+                position: absolute;
+                background-color: $main-color;
+                height: 2px;
+                width: 40%;
+                bottom: 20px;
+                right: 0px;
+                content: '';
+            }
+        }
+
+        p {
+            color: $main-color;
+            font-size: 30px;
+            position: relative;
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+    }
+
+    .life-item {
+        text-align: center;
+
+        .life-img {
+            border-radius: 100%;
+            display: inline-block;
+            box-shadow: 0 -3px 10px #ddd;
+
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+
+        .life-content {
+            padding: 0px 70px;
+
+            h3 {
+                margin: 15px 0px;
+                font-size: 25px;
+                color: $main-color;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 17px;
+                color: $main-color;
+                font-weight: 300;
+            }
+        }
+    }
+}

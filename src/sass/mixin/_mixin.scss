@@ -18,10 +18,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit:cover;
+  object-fit: cover;
 
 
 }
+
 //   @include bgImage("/images/banner.jpg");
 
 
@@ -32,6 +33,7 @@
   right: $right;
   bottom: $bottom;
 }
+
 // @include position-absolute(0%, 0%, 0%, 0%);
 
 @mixin flex($items, $justify, $direction) {
@@ -44,6 +46,7 @@
   justify-content: $justify;
   flex-direction: $direction;
 }
+
 // @include flex(center, center, null);
 
 @mixin Transition($time) {
@@ -53,6 +56,7 @@
   -ms-transition: all $time ease;
   -o-transition: all $time ease;
 }
+
 // @include Transition(0.3s);
 
 // background image
@@ -62,6 +66,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 // @include bgImage("/images/1.jpg");
 
 // Margin
@@ -70,6 +75,7 @@
     margin: #{$var};
   }
 }
+
 // @include margin(2px 4px 6px 8px);
 
 // Padding
@@ -78,31 +84,37 @@
     padding: #{$var};
   }
 }
+
 // @include padding(2px 4px 6px 8px);
 
 @mixin input-placeholder {
   &.placeholder {
     @content;
   }
+
   &:-moz-placeholder {
     @content;
   }
+
   &::-moz-placeholder {
     @content;
   }
+
   &:-ms-input-placeholder {
     @content;
   }
+
   &::-webkit-input-placeholder {
     @content;
   }
 }
+
 // @include input-placeholder {color: red;}
 
 //// box
 //@mixin box($width, $height: $width) {
- // width: $width;
- // height: $height;
+// width: $width;
+// height: $height;
 //}
 
 // key Frames
@@ -110,31 +122,35 @@
   @-webkit-keyframes #{$animation-name} {
     @content;
   }
+
   @-moz-keyframes #{$animation-name} {
     @content;
   }
+
   @-ms-keyframes #{$animation-name} {
     @content;
   }
+
   @-o-keyframes #{$animation-name} {
     @content;
   }
+
   @keyframes #{$animation-name} {
     @content;
   }
 }
 
 // @include keyframes(background) {
-    //   0% {
-    //     background: white;
-    //   }
-    //   50% {
-    //     background: lightblue;
-    //   }
-    //   100% {
-    //     background: royalblue;
-    //   }
-    // }
+//   0% {
+//     background: white;
+//   }
+//   50% {
+//     background: lightblue;
+//   }
+//   100% {
+//     background: royalblue;
+//   }
+// }
 
 @mixin animation($str) {
   -webkit-animation: #{$str};
@@ -143,30 +159,35 @@
   -o-animation: #{$str};
   animation: #{$str};
 }
+
 //  @include animation("all 3s 3");
-    @mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
+@mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
   font-size: $font-size * 1px;
   // font-size: $font-size * 0.1rem;
   // example using rem values and 62.5% font-size so 1rem = 10px
 
   @if $line-height==normal {
     line-height: normal;
-  } @else {
+  }
+
+  @else {
     line-height: $line-height / $font-size;
   }
 
   @if $letter-spacing==normal {
     letter-spacing: normal;
-  } @else {
+  }
+
+  @else {
     letter-spacing: #{$letter-spacing / $font-size}em;
   }
 }
 
 // @include font-size(12, 18, 1.2);
-    //    // returns
-  //      // font-size: 12px;
-      //  // line-height: 1.5; // 18 / 12
-        // // letter-spacing: 0.1em;
+//    // returns
+//      // font-size: 12px;
+//  // line-height: 1.5; // 18 / 12
+// // letter-spacing: 0.1em;
 
 // Clearfix
 @mixin clearfix {
@@ -184,50 +205,59 @@
 // div use media query
 
 @mixin for-size($size) {
-  @if $size == phone-only {
+  @if $size ==phone-only {
     @media (max-width: 375px) {
       @content;
     }
-  } @else if $size == tablet-portrait-up {
+  }
+
+  @else if $size ==tablet-portrait-up {
     @media (min-width: 576px) {
       @content;
     }
-  } @else if $size == tablet-landscape {
+  }
+
+  @else if $size ==tablet-landscape {
     @media (min-width: 768px) {
       @content;
     }
-  } @else if $size == desktop-up {
+  }
+
+  @else if $size ==desktop-up {
     @media (min-width: 1200px) {
       @content;
     }
-  } @else if $size == desktop-mac {
+  }
+
+  @else if $size ==desktop-mac {
     @media (min-width: 1440px) {
       @content;
     }
   }
 }
 
-  // @include for-size(phone-only) {
-  //   background-color: #ddd;
-  // }
-  // @include for-size(tablet-portrait-up) {
-  //   background-color: gray;
-  // }
-  // @include for-size(tablet-landscape) {
-  //   background-color: pink;
-  // }
-  // @include for-size(desktop-up) {
-  //   background-color: #f00;
-  // }
-  // @include for-size(desktop-mac) {
-  //   background-color: green;
-  // }
-  
+// @include for-size(phone-only) {
+//   background-color: #ddd;
+// }
+// @include for-size(tablet-portrait-up) {
+//   background-color: gray;
+// }
+// @include for-size(tablet-landscape) {
+//   background-color: pink;
+// }
+// @include for-size(desktop-up) {
+//   background-color: #f00;
+// }
+// @include for-size(desktop-mac) {
+//   background-color: green;
+// }
+
 @mixin media($width) {
   @media screen and (max-width: $width) {
     @content;
   }
 }
+
 // @include media(1200px) {background: red;}
 // @include media(1024px) {background: blue;}
 // @include media(768px) {background: green;}

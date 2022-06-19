@@ -1,10 +1,17 @@
 .summer-image {
   position: relative;
+  padding-top: 40px;
+
+  .heading_tab {
+    text-align: left;
+  }
+
   img {
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
   }
+
   .off {
     margin-left: 30px;
     height: 300px;
@@ -12,51 +19,57 @@
     font-size: 16px;
     border-radius: 100%;
     position: absolute;
-    top: 9%;
+    top: 12%;
     left: 6%;
     background-color: $white;
     animation: ripple 1000ms infinite;
     box-shadow: 0.174px -4.997px 13.5px rgba(2, 4, 0, 0.25);
 
     @include flex(center, center, column);
+
+    span {
+      font-weight: 300 !important;
+    }
+
+    span,
+    h5 {
+      font-size: 45px;
+      color: $main-color;
+      font-weight: 700;
+    }
+
     p {
       font-size: 40px;
       color: $main-color;
       font-weight: 700;
     }
+
     &_txt {
       font-weight: 300 !important;
     }
   }
+
   .image-txt {
     position: absolute;
     top: 50%;
     left: 9%;
     text-align: left;
+
     .heading_tab {
       @include flex(null, null, column-reverse);
+
       h2,
       h3 {
         font-size: 50px;
         color: $white;
       }
     }
+
     p {
       font-size: 20px;
       color: $white;
       text-transform: uppercase;
       font-weight: 500;
     }
-  }
-}
-
-@keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 0px transparent, 0 0 0 0px #745a82, 0 0 0 0px transparent,
-      0 0 0 0px #745a82, 0 0 0 0px transparent;
-  }
-  100% {
-    box-shadow: 0 0 0 15px transparent, 0 0 0 17px rgba(255, 255, 255, 0),
-      0 0 0 40px transparent, 0 0 0 42px rgba(255, 255, 255, 0);
   }
 }

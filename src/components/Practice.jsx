@@ -39,9 +39,15 @@ const Practice = () => {
                         </Col>
                         <Col lg={6} xl={6} sm={12}>
                             <Div className='workshop_img'>
-                                <img src={Border} alt='Hatha' className='border img-fluid' />
-                                <img src={PracticeImg} alt='Hatha' className='user img-fluid' />
-                                <P className='vertical-txt right'>hatha</P>
+                                <img src={Border} alt='border' className='border img-fluid' />
+                                <img src={PracticeImg} alt='PracticeImg' className='user img-fluid' />
+                                <Div className='vertical-txt right'>
+                                    <span>h</span>
+                                    <span>a</span>
+                                    <span>t</span>
+                                    <span>h</span>
+                                    <span>a</span>
+                                </Div>
                             </Div>
                         </Col>
 
@@ -54,9 +60,15 @@ const Practice = () => {
                     <Row className='align-items-center'>
                         <Col lg={7} xl={6} sm={12}>
                             <Div className='workshop_img'>
-                                <img src={Border} alt='Hatha' className='border img-fluid' />
-                                <img src={PositionsImg} alt='Hatha' className='user img-fluid' />
-                                <P className='vertical-txt left'>hatha</P>
+                                <img src={Border} alt='border' className='border img-fluid' />
+                                <img src={PositionsImg} alt='PositionsImg' className='user img-fluid' />
+                                <Div className='vertical-txt left'>
+                                    <span>h</span>
+                                    <span>a</span>
+                                    <span>t</span>
+                                    <span>h</span>
+                                    <span>a</span>
+                                </Div>
                             </Div>
                         </Col>
                         <Col lg={5} xl={6} sm={12}>

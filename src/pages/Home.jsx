@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import { Banner, Meet, Summer, SummerImage, Workshop } from '../components'
-import Practice from '../components/Practice'
+import { Banner, Meet, Summer, SummerImage, Life, Workshop, Practice } from '../components'
 const Home = () => {
     return (
         <Fragment>
@@ -8,6 +7,7 @@ const Home = () => {
             <Meet />
             <SummerImage />
             <Practice />
+            <Life />
             <Summer />
             <Workshop />
         </Fragment>

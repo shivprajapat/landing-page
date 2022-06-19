@@ -1,6 +1,7 @@
 export const routesData = [
     {
         name: "Home",
+        link:'/'
     },
     {
         name: "Class",

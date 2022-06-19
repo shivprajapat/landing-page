@@ -1,43 +1,414 @@
-@include media(1620px) {
+@media screen and (max-width:1620px) {
   .home .home-img {
-    background: pink;
     width: 700px;
     height: 700px;
   }
 }
 
-@include media(1440px) {
-  .home .home-img {
-    background: cyan;
+@media screen and (max-width:1440px) {
+  .meet .heading_tab {
+    margin-top: -10px;
   }
 }
 
-@include media(1280px) {
+@media screen and (max-width:1280px) {
   .home .home-img {
-    background: orange;
+    width: 600px;
+    height: 600px;
+
+    .home-text p {
+      font-size: 20px !important
+    }
+  }
+
+  .vertical-txt {
+    font-size: 20px;
+
+    &.right {
+      right: 3% !important;
+      bottom: -20% !important;
+    }
+
+    &.left {
+      left: -27px !important;
+    }
+  }
+
+  .practice {
+    &_top {}
+
+    &_bottom {
+      .vertical-txt.left {
+        left: 0 !important;
+      }
+    }
+  }
+
+  .life-section .life-item .life-content {
+    padding: 0 30px;
+  }
+
+  .workshop_tab .vertical-txt.left {
+    span {
+      margin-bottom: 11px;
+    }
   }
 }
 
-@include media(992px) {
-  .home .home-img {
-    background: red;
+@media screen and (max-width:1024px) {
+  .home {
+    .home-img {
+      width: 550px;
+      height: 550px;
+    }
+  }
+
+  .practice_bottom {
+    margin-top: 30px;
+  }
+
+  .summer-image .off {
+    width: 220px;
+    height: 220px;
+  }
+
+  .meet .heading_tab {
+    margin-top: -28px;
   }
 }
 
-@include media(1024px) {
-  .home .home-img {
-    background: blue;
+@media screen and (max-width:768px) {
+  .meet {
+    .heading_tab {
+      margin-top: -51px;
+
+      h2,
+      h3 {
+        font-size: 30px;
+      }
+    }
+
+  }
+
+  .meet,
+  .summer,
+  .life-section {
+    .col-lg-4:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .summer-image {
+    .off {
+      width: 160px;
+      height: 160px;
+    }
+
+    .image-txt .heading_tab {
+      margin-bottom: 20px;
+
+      h2,
+      h3 {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .practice {
+
+    &_top,
+    &_bottom {
+
+      padding-top: 40px;
+    }
+
+    &_bottom {
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+
+  }
+
+  .life-section .life-title {
+    h3 {
+      font-size: 25px;
+
+      &::after,
+      &::before {
+        bottom: 50%;
+      }
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
+
+  .workshop {
+    .workshop_tab .vertical-txt.left span {
+      margin-bottom: 11px;
+      font-size: 14px;
+    }
+  }
+
+  .vertical-txt.right {
+    bottom: -10% !important;
+  }
+
+  .team-item .img-box {
+    margin: 0 auto;
   }
 }
 
-@include media(768px) {
-  .home .home-img {
-    background: green;
+@media screen and (max-width:576px) {
+  .vertical-txt {
+    flex-direction: inherit;
+    letter-spacing: 5px !important;
+  }
+
+  .heading_tab {
+    margin-bottom: 20px;
+
+    h2,
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  .workshop,
+  .summer {
+    padding: 20px 0;
+  }
+
+  .summer {
+    .meet_tab {
+      padding-top: 0;
+    }
+
+    .team-item .dots {
+      margin-bottom: 0;
+    }
+  }
+
+  .workshop_img {
+    img.user {
+      width: 260px;
+      height: 260px;
+    }
+
+    img.border {
+      width: 340px;
+      height: 340px;
+    }
+  }
+
+  .practice {
+    padding-bottom: 0;
+
+    &_top,
+    &_bottom {
+      padding-top: 40px;
+    }
+
+    .yoga-tab p {
+      line-height: 35px;
+      font-size: 18px;
+    }
+
+    &_top {
+      &::before {
+        background-position: top left;
+        background-size: 170% 35%;
+      }
+    }
+
+    &_bottom {
+      &::before {
+        background-position: top right;
+        background-size: 170% 35%;
+      }
+
+      margin-top: 0;
+
+      .vertical-txt.left {
+        bottom: inherit !important;
+      }
+    }
+  }
+
+  .life-section {
+    padding-top: 50px;
+
+    .life-title {
+      h3 {
+
+        &::after,
+        &::before {
+          width: 35%;
+        }
+      }
+
+      h3,
+      p {
+        font-size: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .workshop {
+    .workshop_tab .vertical-txt.left {
+      position: inherit;
+      top: initial;
+      margin-bottom: 10px;
+      width: 100%;
+      left: inherit !important;
+
+      span {
+        margin-bottom: 0;
+      }
+    }
+
+    .workshop_img {
+      margin-top: 20px;
+    }
+  }
+
+
+  .home {
+    padding: 0;
+
+    .home-img {
+      width: 340px;
+      height: 340px;
+
+      .home-text {
+        h4 {
+          font-size: 20px !important;
+          padding-top: 10px !important;
+        }
+
+        h1 {
+          font-size: 25px !important;
+          margin-bottom: 5px !important;
+        }
+
+        p {
+          line-height: 26px !important;
+          font-size: 14px !important;
+        }
+
+        .img-box {
+          margin-top: 0;
+          width: 60px;
+          height: 60px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .meet {
+    .heading_tab {
+      padding-top: 52px !important;
+      margin-top: -38px !important;
+      background-size: 170% 62% !important;
+    }
+
+    .meet_tab {
+      padding-top: 0;
+
+      .col-md-6 {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .team-item .dots {
+        margin: 0;
+      }
+
+      .img-box {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .summer-image {
+    .image-txt {
+      top: 45%;
+    }
+
+    .heading_tab {
+      margin-bottom: 5px !important;
+
+      h2,
+      h3 {
+        font-size: 25px !important;
+      }
+
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+
+    .off {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+
+      h5,
+      span {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  footer {
+    .inner-footer {
+      margin-bottom: 30px !important;
+
+      h5 {
+        font-size: 23px !important;
+      }
+    }
+
+    .container {
+      padding-bottom: 20px !important;
+
+      .col-md-6 {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
-@include media(576px) {
-  .home .home-img {
-    background: teal;
+@media screen and (max-width:375px) {
+  .meet .heading_tab {
+
+    h2,
+    h3 {
+      font-size: 26px;
+    }
   }
 }

@@ -11,16 +11,16 @@ const Meet = () => {
                 <Heading title='Meet our' second='yoga classes' />
                 <Div className='meet_tab'>
                     <Row>
-                        <Col lg={12} className='mx-auto'>
-                            <Row className='justify-content-between'>
-                                <Col lg={3} md={6} sm={12}>
+                        <Col xxl={12} className='mx-auto'>
+                            <Row className='justify-content-lg-between justify-content-md-center'>
+                                <Col xxl={3} lg={4} md={6} sm={12}>
                                     <TeamCard img={Hatha} title='Hatha' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Monday' hours='20:00' />
                                 </Col>
-                                <Col lg={3} md={6} sm={12}>
-                                    <TeamCard img={Ashtanga} title='Ashtanga' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Monday' hours='20:00' />
+                                <Col xxl={3} lg={4} md={6} sm={12}>
+                                    <TeamCard img={Ashtanga} title='Ashtanga' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Tuesday' hours='18:00' />
                                 </Col>
-                                <Col lg={3} md={6} sm={12}>
-                                    <TeamCard img={Kundalini} title='Kundalini' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Monday' hours='20:00' />
+                                <Col xxl={3} lg={4} md={6} sm={12}>
+                                    <TeamCard img={Kundalini} title='Kundalini' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Friday' hours='13:30' />
                                 </Col>
                             </Row>
                         </Col>

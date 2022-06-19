@@ -11,15 +11,15 @@ const Summer = () => {
                 <Heading title='look at our' second='Summer classes' />
                 <Div className='meet_tab'>
                     <Row>
-                        <Col lg={10} className='mx-auto'>
-                            <Row className='justify-content-between'>
-                                <Col lg={3} md={6} sm={12}>
+                        <Col xxl={10} className='mx-auto'>
+                            <Row className='justify-content-lg-between justify-content-md-center'>
+                                <Col xxl={3} lg={4} md={6} sm={12}>
                                     <TeamCard img={Anusara} title='Anusara' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Friday' hours='20:00' />
                                 </Col>
-                                <Col lg={3} md={6} sm={12}>
+                                <Col xxl={3} lg={4} md={6} sm={12}>
                                     <TeamCard img={Kripalu} title='Kripalu' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Tuesday' hours='18:00' />
                                 </Col>
-                                <Col lg={3} md={6} sm={12}>
+                                <Col xxl={3} lg={4} md={6} sm={12}>
                                     <TeamCard img={Bharata} title='Bharata' description='Lorem ipsum sit amet, consectetur  adipisicing...' day='Sunday' hours='13:30' />
                                 </Col>
                             </Row>

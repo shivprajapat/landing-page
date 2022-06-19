@@ -3,7 +3,7 @@ import React from 'react'
 import { Div, H4, P } from '../UIKit'
 const TeamCard = ({ img, title, description, day, hours }) => {
     return (
-        <Div class="team-item">
+        <Div className="team-item">
             <Div className='img-box'>
                 <img src={img} alt="team" className='img-fluid' />
             </Div>

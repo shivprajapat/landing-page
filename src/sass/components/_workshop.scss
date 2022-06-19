@@ -1,27 +1,61 @@
 .workshop {
   position: relative;
   padding: 50px 0;
+
+  .vertical-txt.left {
+    font-size: 18px;
+    span {
+      font-weight: 600;
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  img.user {
+    z-index: -1;
+  }
+
   &_tab {
     text-align: left;
+    position: relative;
+
+    .vertical-txt.left {
+      position: absolute;
+      left: -10%;
+      top: 0;
+    }
+
+    .heading_tab {
+      text-align: left;
+    }
+
     p {
       font-size: 20px;
       color: $main-color100;
       text-transform: uppercase;
       line-height: 35px;
     }
+
     .date {
       margin-top: 10px;
+
       p {
         line-height: 26px;
       }
     }
   }
+
   &_img {
     position: relative;
+    text-align: center;
+
     img {
       width: 100%;
       height: 100%;
       border-radius: 100%;
+
       &.border {
         width: 500px;
         height: 500px;
@@ -29,6 +63,7 @@
         animation: spin_01 10s linear infinite;
         object-fit: contain;
       }
+
       &.user {
         position: absolute;
         content: "";
@@ -38,31 +73,42 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+      }
+    }
+
+    .vertical-txt {
+      &.left {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        letter-spacing: 20px;
+        font-weight: 600;
+      }
+
+      &.right {
+        position: absolute;
+        right: -10%;
+        bottom: -35%;
       }
     }
   }
+
+
 }
 
 .vertical-txt {
-  writing-mode: vertical-lr;
-  letter-spacing: 15px;
+  @include flex(center, center, column);
   text-transform: uppercase;
   color: $main-color;
   font-size: 24px;
   font-weight: 300;
 
   &.left {
-    position: absolute;
-    left: 10%;
-    top: 10%;
     letter-spacing: 20px;
     font-weight: 600;
-    font-size: 18px;
   }
+
   &.right {
-    position: absolute;
-    right: 5%;
-    bottom: 0;
+    margin-left: auto;
   }
 }

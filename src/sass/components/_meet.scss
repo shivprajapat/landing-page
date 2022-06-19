@@ -3,6 +3,7 @@
     position: relative;
     padding: 60px 0;
     @include bgImage("../../Assets/images/meet-shape.png");
+    background-size: contain;
     width: 100%;
     margin: 0;
   }
@@ -13,4 +14,6 @@
 .more-btn {
   margin-top: 45px;
   display: inline-block;
+  text-align: center;
+  width: 100%;
 }

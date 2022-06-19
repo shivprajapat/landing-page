@@ -1,11 +1,11 @@
 import React from 'react'
 import { Col, Row, Container } from 'react-bootstrap'
-import { homeRoseIcon,Logo } from "../Assets";
-import { Div, H3,H5, P } from '../UIKit';
+import { homeRoseIcon, Logo } from "../Assets";
+import { Div, H3, H5, P } from '../UIKit';
 
 const Footer = () => {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <Container>
                 <Div className="inner-footer">
                     <Row>
@@ -18,7 +18,7 @@ const Footer = () => {
                 </Div>
                 <Row>
                     <Col lg={6} md={6}>
-                        <Div class="footer-col">
+                        <Div className="footer-col">
                             <H3>About us</H3>
                             <P>Lorem ipsum dolor sit amet, consec<br />
                                 tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</P>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </Div>
                     </Col>
                     <Col lg={2} md={6}>
-                        <Div class="footer-col">
+                        <Div className="footer-col">
                             <H3>About</H3>
                             <ul>
                                 <li><a href="/">Team</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </Div>
                     </Col>
                     <Col lg={2} md={6}>
-                        <Div class="footer-col">
+                        <Div className="footer-col">
                             <H3>About</H3>
                             <ul>
                                 <li><a href="/">Team</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
                         </Div>
                     </Col>
                     <Col lg={2} md={6}>
-                        <Div class="footer-col">
+                        <Div className="footer-col">
                             <H3>About</H3>
                             <ul>
                                 <li><a href="/">Team</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
             </Container>
             <Row>
                 <Col lg={12}>
-                    <P class="copyright-text"></P>
+                    <P className="copyright-text"></P>
                 </Col>
             </Row>
         </footer>
