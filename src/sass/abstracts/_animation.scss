@@ -24,7 +24,15 @@
         box-shadow: 0 0 0 0 $darkBlack;
     }
 }
+@keyframes BannerRipple {
+    0% {
+        box-shadow: 0 0 0 0px transparent, 0 0 0 0px $light-grey100, 0 0 0 0px transparent, 0 0 0 0px $light-grey100, 0 0 0 0px transparent;
+    }
 
+    100% {
+        box-shadow: 0 0 0 15px transparent, 0 0 0 17px $darkBlack, 0 0 0 40px transparent, 0 0 0 42px $darkBlack;
+    }
+}
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0px transparent, 0 0 0 0px $main-color, 0 0 0 0px transparent, 0 0 0 0px $main-color, 0 0 0 0px transparent;
