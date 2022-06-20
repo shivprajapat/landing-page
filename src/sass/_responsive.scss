@@ -75,14 +75,16 @@
   .meet .heading_tab {
     margin-top: -28px;
   }
-    .life-title {
-      h3 {
-  
-        &::after,
-        &::before {
-          width: 35% !important;
-        }
-      }}
+
+  .life-title {
+    h3 {
+
+      &::after,
+      &::before {
+        width: 35% !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -166,6 +168,26 @@
 
   .team-item .img-box {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .navbar .navbar-nav .nav-link {
+    margin-right: 0;
+
+    &.active::before {
+      left: inherit;
+      right: 0;
+      bottom: 38%;
+    }
+  }
+
+  .meet .heading_tab {
+
+    h2,
+    h3 {
+      font-size: 23px;
+    }
   }
 }
 
