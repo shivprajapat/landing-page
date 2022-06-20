@@ -12,7 +12,7 @@ const Life = () => {
                     <P>LIFE</P>
                 </Div>
                 <Row className='justify-content-lg-between justify-content-md-center'>
-                    <Col lg={4} md={6}>
+                    <Col lg={4} md={6} data-aos="fade-up" data-aos-duration="2000">
                         <Div className="life-item">
                             <Div className="life-img">
                                 <img src={Exercise} alt="Exercise" />
@@ -23,7 +23,7 @@ const Life = () => {
                             </Div>
                         </Div>
                     </Col>
-                    <Col lg={4} md={6}>
+                    <Col lg={4} md={6} data-aos="fade-up" data-aos-duration="2000">
                         <Div className="life-item">
                             <Div className="life-img">
                                 <img src={Feeding} alt="Feeding" />
@@ -34,7 +34,7 @@ const Life = () => {
                             </Div>
                         </Div>
                     </Col>
-                    <Col lg={4} md={6}>
+                    <Col lg={4} md={6} data-aos="fade-up" data-aos-duration="2000">
                         <Div className="life-item">
                             <Div className="life-img">
                                 <img src={Meditation} alt="Meditation" />

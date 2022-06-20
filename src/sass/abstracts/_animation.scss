@@ -7,6 +7,7 @@
         transform: rotate(360deg);
     }
 }
+
 @keyframes pulse_01 {
     0% {
         transform: scale(0.94);
@@ -23,6 +24,7 @@
         box-shadow: 0 0 0 0 $darkBlack;
     }
 }
+
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0px transparent, 0 0 0 0px $main-color, 0 0 0 0px transparent, 0 0 0 0px $main-color, 0 0 0 0px transparent;

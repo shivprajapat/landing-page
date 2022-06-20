@@ -9,7 +9,7 @@ const Workshop = () => {
             <Container>
 
                 <Row className='justify-content-between'>
-                    <Col lg={5} xl={6} sm={12}>
+                    <Col lg={5} xl={6} sm={12} data-aos="fade-right" data-aos-duration="2000">
                         <Div className='workshop_tab'>
                             <Div className='vertical-txt left'>
                                 <span>i</span>
@@ -32,7 +32,7 @@ const Workshop = () => {
                             </Div>
                         </Div>
                     </Col>
-                    <Col lg={7} xl={6} sm={12}>
+                    <Col lg={7} xl={6} sm={12} data-aos="fade-left" data-aos-duration="2000">
                         <Div className='workshop_img'>
                             <img src={Border} alt='border' className='border img-fluid' />
                             <img src={WorkshopImg} alt='WorkshopImg' className='user img-fluid' />

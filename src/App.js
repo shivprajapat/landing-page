@@ -1,9 +1,9 @@
 import React, { Fragment, useState, useEffect } from "react";
-
-import { Header } from './components/Header'
+import { Header, Footer, Preloader } from './components'
 import Home from './pages/Home';
-import Footer from './components/Footer';
-import Preloader from './components/Preloader';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   let [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -11,7 +11,8 @@ function App() {
     setTimeout(() => {
       setLoading(false)
     }, 3000);
-
+    AOS.init({ duration: 1000 });
+    AOS.refresh();
   }, []);
   return (
     <Fragment>
@@ -21,10 +22,8 @@ function App() {
           <Header />
           <Home />
           <Footer />
-        </Fragment>}
-      <Header />
-      <Home />
-      <Footer />
+        </Fragment>
+      }
     </Fragment>
   );
 }

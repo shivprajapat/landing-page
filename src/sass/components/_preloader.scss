@@ -1,7 +1,7 @@
 .preloader {
     @include flex(center, center, null);
     min-height: 100vh;
-    background-color:$BlackPearl;
+    background-color: $BlackPearl;
 
     .loader {
         position: absolute;

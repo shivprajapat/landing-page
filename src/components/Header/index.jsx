@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Logo } from "../../Assets";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { routesData } from './routerData'
-export const Header = () => {
+const Header = () => {
     const [data] = useState(routesData);
     console.log(routesData)
     return (
@@ -26,3 +26,5 @@ export const Header = () => {
         </Navbar>
     );
 }
+
+export default Header;

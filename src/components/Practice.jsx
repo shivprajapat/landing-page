@@ -9,7 +9,7 @@ const Practice = () => {
             <Div className='practice_top section-padding'>
                 <Container>
                     <Row className='align-items-center'>
-                        <Col lg={6} xl={6} sm={12}>
+                        <Col lg={6} xl={6} sm={12} data-aos="fade-right" data-aos-duration="2000">
                             <Div className='workshop_tab'>
                                 <Heading title='dynamics' second='practice' />
                                 <Div className='yoga-tab'>
@@ -37,7 +37,7 @@ const Practice = () => {
                                 </Div>
                             </Div>
                         </Col>
-                        <Col lg={6} xl={6} sm={12}>
+                        <Col lg={6} xl={6} sm={12} data-aos="fade-left" data-aos-duration="2000">
                             <Div className='workshop_img'>
                                 <img src={Border} alt='border' className='border img-fluid' />
                                 <img src={PracticeImg} alt='PracticeImg' className='user img-fluid' />
@@ -58,7 +58,7 @@ const Practice = () => {
             <Div className='practice_bottom'>
                 <Container>
                     <Row className='align-items-center'>
-                        <Col lg={7} xl={6} sm={12}>
+                        <Col lg={7} xl={6} sm={12} data-aos="fade-right" data-aos-duration="2000">
                             <Div className='workshop_img'>
                                 <img src={Border} alt='border' className='border img-fluid' />
                                 <img src={PositionsImg} alt='PositionsImg' className='user img-fluid' />
@@ -71,7 +71,7 @@ const Practice = () => {
                                 </Div>
                             </Div>
                         </Col>
-                        <Col lg={5} xl={6} sm={12}>
+                        <Col lg={5} xl={6} sm={12} data-aos="fade-left" data-aos-duration="2000">
                             <Div className='workshop_tab'>
                                 <Heading title='dynamics' second='Positions' />
                                 <Div className='yoga-tab'>
