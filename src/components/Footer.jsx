@@ -9,7 +9,7 @@ const Footer = () => {
             <Container>
                 <Div className="inner-footer">
                     <Row>
-                        <Col lg={6} md={6} className='mx-auto'>
+                        <Col lg={6} className='mx-auto'>
                             <img src={homeRoseIcon} alt="logo" className="img-fluid" />
                             <H5>The asanas purify our body and keep it healthy, making it a suitable vehicle for the soul.</H5>
 
